@@ -16,7 +16,7 @@ export default function CharacterList() {
   }]);
 
   // const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
