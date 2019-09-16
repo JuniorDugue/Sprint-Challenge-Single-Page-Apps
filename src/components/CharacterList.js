@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CharacterCard from "./CharacterCard";
 import axios from "axios";
+
 const BASE_URL = "https://rickandmortyapi.com/api/character/";
 
 export default function CharacterList() {

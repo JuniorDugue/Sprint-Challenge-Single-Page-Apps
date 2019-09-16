@@ -2,9 +2,10 @@ import React from "react";
 // import { Tab, Menu, Icon } from "semantic-ui-react";
 import { NavLink, Route } from "react-router-dom";
 import styled from "styled-components";
-import CharacterCard from "./CharacterCard";
-import LocationCard from "./LocationCard";
-import EpisodeCard from "./EpisodeCard";
+import CharacterList from "./CharacterCard";
+import LocationList from "./LocationCard";
+import EpisodeList from "./EpisodeCard";
+import WelcomePage from "./WelcomePage";
 
 // TODO: Add missing menu/tabs/nav below
 
@@ -22,10 +23,10 @@ export default function TabNav() {
       <NavLink to = "/location">Locations</NavLink>
       <NavLink to = "/episode">Episodes</NavLink>
 
-      <Route path="/" exact render/>
-      <Route path="/character" exact render={(props) => <CharacterCard {...props} />}/>
-      <Route path="/location" exact render={(props) => <LocationCard {...props} />}/>
-      <Route path="/episode" exact render={(props) => <EpisodeCard {...props} />}/>
+      <Route path="/" exact render={()=> <WelcomePage/>}/>
+      <Route path="/character" exact render={(props) => <CharacterList {...props} />}/>
+      <Route path="/location" exact render={(props) => <LocationList {...props} />}/>
+      <Route path="/episode" exact render={(props) => <EpisodeList {...props} />}/>
     </StyledNav>
     )
 };
