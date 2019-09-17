@@ -23,7 +23,12 @@ function EpisodeList(){
     <div className="episodelist">
       <h1>EpisodeList</h1>
       {getEpisodes.map((getEpisode, i) => {
-        return (<EpisodeCard key={i} getEpisode={getEpisode}/>) })}
+        return (<EpisodeCard key={i} 
+        getEpisode={getEpisode}
+        name={getEpisode.name}
+        episode={getEpisode.episode}
+        air_date={getEpisode.air_date}
+        />) })}
     </div>
   )
 }

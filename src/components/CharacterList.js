@@ -58,7 +58,7 @@ export default function CharacterList() {
         status={getCharacter.status}
         origin={getCharacter.origin.name}
         species={getCharacter.species}
-        img={getCharacter.img}
+        image={getCharacter.image}
         alt={getCharacter.name}
         />) })}
     </section>

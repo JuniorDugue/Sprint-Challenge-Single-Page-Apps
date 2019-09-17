@@ -26,7 +26,13 @@ useEffect(() => {
   return(
     <section className="locations-list grid-view">
       {getLocations.map((getLocation,i) => {
-        return (<LocationCard key={i} getLocation={getLocation} />) })}
+        return (<LocationCard key={i} 
+        getLocation={getLocation}
+        name={getLocation.name}
+        dimension={getLocation.dimension}
+        type={getLocation.type}
+        residents={getLocation.residents}
+         />) })}
     </section>
   );
 }
