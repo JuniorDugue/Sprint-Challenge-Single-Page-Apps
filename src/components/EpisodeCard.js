@@ -6,7 +6,7 @@ function EpisodeCard(props){
       <h1>EpisodeCard</h1>
       <p>{props.name}</p>
       <p>{props.episode}</p>
-      <p>{props.air_date}</p>
+      <p>Air Date: {props.air_date}</p>
     </div>
   )
 }

@@ -25,7 +25,7 @@ useEffect(() => {
 
   return(
     <section className="locations-list grid-view">
-      {getLocations.map((getLocation,i) => {
+      {getLocations.map((getLocation) => {
         return (<LocationCard key={i} 
         getLocation={getLocation}
         name={getLocation.name}

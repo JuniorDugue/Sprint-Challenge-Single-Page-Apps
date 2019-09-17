@@ -51,7 +51,7 @@ export default function CharacterList() {
   return (    
     <section className="character-list grid-view">
       {/* <h2>TODO: `array.map()` over your state here!</h2> */}
-      {getCharacters.map((getCharacter, i) => {
+      {getCharacters.map((getCharacter) => {
         return (<CharacterCard key={i} 
         getCharacter={getCharacter} 
         name={getCharacter.name}

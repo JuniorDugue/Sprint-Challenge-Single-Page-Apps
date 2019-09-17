@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function CharacterCard(props) {
-  console.log(props, "card")
+  // console.log(props, "card")
   // return <span>todo: character</span>;
   return(
     <div>
