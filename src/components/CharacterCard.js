@@ -5,11 +5,11 @@ export default function CharacterCard(props) {
   // return <span>todo: character</span>;
   return(
     <div>
-      <h3>{props.getCharacter.name}</h3>
-      <img src={props.getCharacter.image} alt={props.getCharacter.name} />
-      <p>Status: {props.getCharacter.status}</p>
-      <p>Origin: {props.getCharacter.origin.name}</p>
-      <p>Species: {props.getCharacter.species}</p>
+      <h3>{props.name}</h3>
+      <img src={props.image} alt={props.name} />
+      <p>Status: {props.status}</p>
+      <p>Origin: {props.origin}</p>
+      <p>Species: {props.species}</p>
     </div>   
   )
 }

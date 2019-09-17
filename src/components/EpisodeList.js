@@ -22,7 +22,8 @@ function EpisodeList(){
   return(
     <div className="episodelist">
       <h1>EpisodeList</h1>
-      {getEpisodes.map(getEpisode => <EpisodeCard getEpisode={getEpisode}/>)}
+      {getEpisodes.map((getEpisode, i) => {
+        return (<EpisodeCard key={i} getEpisode={getEpisode}/>) })}
     </div>
   )
 }

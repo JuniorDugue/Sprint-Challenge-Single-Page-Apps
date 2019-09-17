@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import LocationCard from "./LocationCard";
+import { Item } from "semantic-ui-react";
 
 const BASE_URL = "https://rickandmortyapi.com/api/location/";
 
@@ -24,7 +25,8 @@ useEffect(() => {
 
   return(
     <section className="locations-list grid-view">
-      {getLocations.map(getLocation => <LocationCard getLocation={getLocation} /> )}
+      {getLocations.map((getLocation,i) => {
+        return (<LocationCard key={i} getLocation={getLocation} />) })}
     </section>
   );
 }
